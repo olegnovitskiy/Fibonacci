@@ -1,19 +1,18 @@
-import junit.framework.TestCase;
 import org.junit.Test;
 
-import static org.junit.Assert.*;
 import static org.junit.Assert.assertEquals;
 
-/**
- * Created by NIO on 28.04.2016. All rights reserved.
- */
-public class FibonacciDemoTest extends TestCase {
+public class FibonacciDemoTest {
     @Test
     public void testFib() throws Exception {
         assertEquals(0, fib(0));
+        assertEquals(1, fib(1));
     }
 
-    private int fib(int i) {
-        return 0;
+    private int fib(int number) {
+        if (number == 0) {
+            return 0;
+        }
+        return 1;
     }
 }
