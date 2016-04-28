@@ -5,8 +5,10 @@ import static org.junit.Assert.assertEquals;
 public class FibonacciDemoTest {
     @Test
     public void testFib() throws Exception {
-        assertEquals(0, fib(0));
-        assertEquals(1, fib(1));
+        int cases[][] = {{0, 0}, {1,1}};
+        for (int[] aCase : cases) {
+            assertEquals(aCase[1], fib(aCase[0]));
+        }
     }
 
     private int fib(int number) {
