@@ -18,6 +18,6 @@ public class FibonacciDemoTest {
         if (number <= 2) {
             return 1;
         }
-        return 2;
+        return 1 + 1;
     }
 }
